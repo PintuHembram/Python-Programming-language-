@@ -18,22 +18,26 @@ The language was finally released in 1991. When it was released, it used a lot f
 1. **The Birth of Python 0.9.0(1991):-** Python’s journey began with version 0.9.0, released by Guido van Rossum in 1991. This initial release included core features such as exception handling, functions, and the core data types: list, dict, str, and others. It also introduced the module system, allowing the organization of code into reusable libraries.
 2. **Python 1.0 (1994) Early Versions and Growth:-** Python 1.0 marked the official public release, bringing in significant features such as:
 
--Lambda, Map, Filter, and Reduce: Functional programming constructs that allowed concise and powerful data manipulation.
--Exception Handling: A structured way to handle errors and exceptions in code.
+- Lambda, Map, Filter, and Reduce: Functional programming constructs that allowed concise and powerful data manipulation.
+- Exception Handling: A structured way to handle errors and exceptions in code.
 **Python 1.5(1997):-** Version 1.5 introduced important updates, including:
 
--Standard Library Enhancements: Expansion of the standard library, making Python more versatile.
--Unicode Support: Initial support for Unicode, facilitating internationalizatio
+- Standard Library Enhancements: Expansion of the standard library, making Python more versatile.
+- Unicode Support: Initial support for Unicode, facilitating internationalizatio
 3. **Establishing a Strong Foundation**
+  
 **Python 2.0 (2000)**
+
 Python 2.0 was a pivotal release that laid the groundwork for modern Python with:
 
--**List Comprehensions:-** A syntactic construct for creating lists based on existing lists.
--**Garbage Collection:-** Automatic memory management to reclaim unused memory.
--**Unicode Support:-** Full support for Unicode, enabling better handling of international text.
+- **List Comprehensions:-** A syntactic construct for creating lists based on existing lists.
+- **Garbage Collection:-** Automatic memory management to reclaim unused memory.
+- **Unicode Support:-** Full support for Unicode, enabling better handling of international text.
+  
 **Python 2.7 (2010)**
+  
 Python 2.7 was the final major release in the Python 2.x series, bringing several features from Python 3.x to ease the transition:
 
--**Ordered Dictionaries:-** Dictionaries that maintain the insertion order of keys.
--**Set Literals:-** A more convenient way to define sets.
--**Improved Syntax:-** Enhanced syntax features, including more robust error handling and new string formatting methods.
+- **Ordered Dictionaries:-** Dictionaries that maintain the insertion order of keys.
+- **Set Literals:-** A more convenient way to define sets.
+- **Improved Syntax:-** Enhanced syntax features, including more robust error handling and new string formatting methods.
