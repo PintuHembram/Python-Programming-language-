@@ -13,6 +13,8 @@ The inspiration for the name came from the BBC’s TV Show – ‘ Monty Python�
 **Evolution of Python:-**
 The language was finally released in 1991. When it was released, it used a lot fewer codes to express the concepts, when we compare it with Java , C++ & C . Its design philosophy was quite good too. Its main objective is to provide code readability and advanced developer productivity. When it was released, it had more than enough capability to provide classes with inheritance, several core data types of exception handling and functions.
 
++ ## Python Version.
+  
 **Following are the illustrations of different versions of Python along with the timeline.**
 
 1. **The Birth of Python 0.9.0(1991):-** Python’s journey began with version 0.9.0, released by Guido van Rossum in 1991. This initial release included core features such as exception handling, functions, and the core data types: list, dict, str, and others. It also introduced the module system, allowing the organization of code into reusable libraries.
