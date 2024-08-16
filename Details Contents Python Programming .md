@@ -9,9 +9,12 @@ Python was invented by **Guido van Rossum** in The late 1980s. He  began working
 **Why Python called Python?**
 
 The inspiration for the name came from the BBC’s TV Show – ‘ Monty Python’s Flying Circus’ , as he was a big fan of the TV show and also he wanted a short, unique and slightly mysterious name for his invention and hence he named it Python! He was the “Benevolent dictator for life” (BDFL) until he stepped down from the position as the leader on 12th July 2018. For quite some time he used to work for Google, but currently, he is working at Dropbox.
+
 **Evolution of Python:-**
 The language was finally released in 1991. When it was released, it used a lot fewer codes to express the concepts, when we compare it with Java , C++ & C . Its design philosophy was quite good too. Its main objective is to provide code readability and advanced developer productivity. When it was released, it had more than enough capability to provide classes with inheritance, several core data types of exception handling and functions.
+
 **Following are the illustrations of different versions of Python along with the timeline.**
+
 1. **The Birth of Python 0.9.0(1991):-** Python’s journey began with version 0.9.0, released by Guido van Rossum in 1991. This initial release included core features such as exception handling, functions, and the core data types: list, dict, str, and others. It also introduced the module system, allowing the organization of code into reusable libraries.
 2. **Python 1.0 (1994) Early Versions and Growth:-** Python 1.0 marked the official public release, bringing in significant features such as:
 
