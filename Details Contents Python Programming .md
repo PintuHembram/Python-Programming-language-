@@ -189,3 +189,75 @@ Installing Python on Windows is a straightforward process. Here's a step-by-step
 - You can now start writing Python code using any text editor or an Integrated Development Environment (IDE) like PyCharm, VS Code, or IDLE (which comes with Python).
 
 By following these steps, Python should be successfully installed on your Windows system, and you'll be ready to start coding!
+
+## **Environment Variables**
+
+Environment variables in Python are key-value pairs that are set outside the program and are used to configure the behavior of running applications. These variables are part of the operating system's environment, and they can be accessed within Python scripts to influence the script's operation or to provide it with necessary configuration data.
+
+### Key Points about Environment Variables in Python:
+
+1. **Operating System Level Configuration**:  
+   Environment variables are typically set at the operating system level and can be accessed by all programs running in that environment, not just Python scripts. They can be used to store information like system paths, user preferences, API keys, and other configuration data.
+
+2. **Accessing Environment Variables**:  
+   In Python, you can access environment variables using the `os` module. Here's how you can access them:
+
+   ```python
+   import os
+   
+   # Accessing an environment variable
+   db_host = os.getenv('DB_HOST')
+   print(db_host)
+   ```
+
+   - The `os.getenv()` function returns the value of the environment variable named `'DB_HOST'`. If the environment variable does not exist, it returns `None` (or you can specify a default value as a second argument).
+
+3. **Setting Environment Variables**:
+   - In Python, you can set environment variables temporarily for the duration of the script execution using `os.environ`:
+   
+   ```python
+   import os
+   
+   os.environ['MY_VAR'] = 'my_value'
+   print(os.getenv('MY_VAR'))  # Output: my_value
+   ```
+
+   - These variables will only be available while the script is running and will not persist once the script ends.
+
+4. **Using Environment Variables**:
+   - Environment variables are often used to manage settings for different environments, like development, testing, and production, without changing the code. For example, you can store database credentials or API keys in environment variables to avoid hardcoding sensitive information in your codebase.
+
+5. **Common Use Cases**:
+   - **Path Configuration**: Setting paths for executables and libraries.
+   - **Configuration Settings**: Managing settings like debug modes, feature flags, or service endpoints.
+   - **Sensitive Information**: Storing API keys, passwords, and other sensitive data.
+
+6. **Managing Environment Variables**:
+   - **Windows**: You can manage environment variables via the System Properties > Environment Variables dialog.
+   - **Linux/MacOS**: You can manage them in the shell using commands like `export` (for setting) and `echo` (for reading).
+   - **.env Files**: In development, environment variables are often stored in a `.env` file and loaded using a package like `python-dotenv`.
+
+### Example of Using Environment Variables:
+
+```python
+import os
+
+# Retrieve environment variables
+api_key = os.getenv('API_KEY', 'default_key')
+
+# Use the environment variable
+if api_key == 'default_key':
+    print("Warning: Using default API key")
+else:
+    print(f"API Key: {api_key}")
+```
+
+In this example, the script attempts to get the value of the `API_KEY` environment variable. If it's not set, it defaults to `'default_key'`.
+
+### Why Use Environment Variables?
+
+- **Security**: Keep sensitive information out of your codebase.
+- **Flexibility**: Easily switch configurations without modifying the code.
+- **Portability**: Write code that works in different environments (e.g., development vs. production) with the same configuration mechanism.
+
+Understanding and using environment variables effectively allows you to write more secure, flexible, and portable Python applications.
