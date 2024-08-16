@@ -32,5 +32,6 @@ Python is a high-level, interpreted programming language known for its simplicit
 - **Automation and Scripting:** Writing scripts to automate repetitive tasks.
 - **Software Development:** Developing desktop applications, games, and more.
 - **Education:** Teaching programming concepts due to its simplicity.
+  
 **Conclusion**
 Python's ease of use, readability, and extensive ecosystem make it one of the most popular programming languages in the world. It's a go-to language for many developers, whether they are working on simple scripts or complex machine learning models.
