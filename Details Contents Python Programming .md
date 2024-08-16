@@ -261,3 +261,135 @@ In this example, the script attempts to get the value of the `API_KEY` environme
 - **Portability**: Write code that works in different environments (e.g., development vs. production) with the same configuration mechanism.
 
 Understanding and using environment variables effectively allows you to write more secure, flexible, and portable Python applications.
+
+## **Executing Python from the Command Line:-**
+
+Executing Python from the command line allows you to run Python scripts or interact with the Python interpreter directly from your terminal or command prompt. Here's a step-by-step guide to running Python from the command line on various operating systems.
+
+### Step 1: Install Python
+First, ensure that Python is installed on your system. You can download the latest version from the official Python website: [python.org/downloads](https://www.python.org/downloads/). During installation on Windows, make sure to check the box that says **"Add Python to PATH"** to make Python accessible from the command line.
+
+### Step 2: Open the Command Line
+
+- **Windows**: Press `Win + R`, type `cmd`, and press Enter.
+- **macOS**: Open Spotlight (`Cmd + Space`), type `Terminal`, and press Enter.
+- **Linux**: Open your terminal application (varies by distribution).
+
+### Step 3: Verify Python Installation
+
+To verify that Python is correctly installed and accessible from the command line, type:
+
+```bash
+python --version
+```
+or
+
+```bash
+python3 --version
+```
+
+If Python is installed, it will display the version number. If not, you may need to ensure Python is correctly installed or that it's added to your system's `PATH`.
+
+### Step 4: Running the Python Interpreter
+
+To start the Python interpreter (an interactive shell where you can type Python commands), type:
+
+```bash
+python
+```
+or
+
+```bash
+python3
+```
+
+You'll enter the Python interactive mode, where you can type Python commands directly and see the results. For example:
+
+```python
+>>> print("Hello, World!")
+Hello, World!
+```
+
+Exit the interpreter by typing `exit()` or pressing `Ctrl + Z` followed by Enter on Windows, or `Ctrl + D` on macOS/Linux.
+
+### Step 5: Running Python Scripts
+
+To execute a Python script from the command line:
+
+1. **Navigate to the Script's Directory**:
+   Use the `cd` command to navigate to the directory where your Python script is located. For example:
+
+   ```bash
+   cd C:\Python Programming\
+   ```
+
+   or
+
+   ```bash
+   cd /path/to/your/script
+   ```
+
+2. **Run the Script**:
+   Once in the directory, run the script by typing:
+
+   ```bash
+   python script_name.py
+   ```
+
+   or
+
+   ```bash
+   python3 script_name.py
+   ```
+
+   Replace `script_name.py` with the actual name of your Python file.
+
+### Example:
+
+Suppose you have a Python script called `hello.py` containing the following code:
+
+```python
+print("Hello from Python!")
+```
+
+To run this script:
+
+1. Open the command line.
+2. Navigate to the directory where `hello.py` is located.
+3. Run the script:
+
+   ```bash
+   python hello.py
+   ```
+
+The output will be:
+
+```bash
+Hello from Python!
+```
+
+### Step 6: Passing Arguments to a Python Script
+
+You can pass arguments to your Python script via the command line. For example, if you have a script that accepts arguments:
+
+```python
+import sys
+
+# Print command-line arguments
+print("Arguments:", sys.argv)
+```
+
+Run the script with arguments like this:
+
+```bash
+python script_name.py arg1 arg2 arg3
+```
+
+The `sys.argv` list will contain the script name as the first element, followed by any arguments you passed (`arg1`, `arg2`, `arg3` in this case).
+
+### Troubleshooting
+
+- **Command Not Recognized**: If the `python` command is not recognized, make sure Python is installed correctly and added to your `PATH`. On Windows, reinstall Python and ensure "Add Python to PATH" is checked during installation.
+- **Using `python3` on macOS/Linux**: On some systems, you may need to use `python3` instead of `python`, as `python` might refer to Python 2.x.
+
+By following these steps, you can easily execute Python scripts and interact with the Python interpreter directly from the command line, which is an essential skill for Python developers.
